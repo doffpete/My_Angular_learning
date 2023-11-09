@@ -1,11 +1,101 @@
 Topics learnt for the day 09/11/2023;
 Angular Basics
-Angular Templates and NGModules
+Angular Components
+Angular Templates
 Angular Binding
+Interpolation
+Directives
 
-Angular Basics; here i learnt that it is important to know about the angular cli.
+ANGULAR BASICS:
+    Here i learnt that it is important to know about the angular cli.
  It is the fastest, easiest and recommended way to develop an angular application.
  The Angular cli makes a number of task easy, 
  ng build - compiles an angular app into an output directory.
  ng serve - builds and serves your application, rebuilds on file change
  ng generate - generates or modifies files 
+ ng test - runs unit tests on a given project
+ ng e2e - builds and serves an angular application then runs end-to-end tests.
+
+ To install the cli run the command npm install -g @angular/cli  
+  learnt this an alot more on the basics of angular and how to install and serve your application..
+
+
+ANGULAR COMPONENTS:
+    A component in angular is made up of three main parts 
+The templates, Styles and The Class.
+ Here, i studied and understood angular's component structure and how it functions.
+
+
+ ANGULAR TEMPLATES: 
+    Each Angular template in an application is a section of HTML, to include as a part of the page that the browser displays.
+HTML templates; Here i understood that every component has an HTML template that declares how that component renders. 
+you can define this template either inline or by file path.
+To refer to an external HTML file, we use the templateURL property
+while to refer to an in-line, we use the template property.
+(same thing applies to the styles.)
+
+
+ANGULAR BINDING:
+This is a technique that provides a way to transfer data between the UI and the model. 
+It also helps to make the application dynamic.
+
+It is sub classified into;
+ONE-WAY DATA BINDING
+TWO-WAY DATA BINDING
+
+In one-way Binding, this is sub divided into two;
+property binding and event binding;
+(When data flow is from model to the view ---- property binding
+whilst when data flow is from the view to the model ---- event binding).
+In property binding the property or attribute is housed in a square bracket [], 
+whilst In Event binding, the event is housed in a bracket (); it lets you listen for and 
+respond to user action such as keystrokes, mouse movements, clicks and touches etc.
+
+
+
+
+
+In Two-way data binding, data is being transported from the model to the view and vice versa at the same time.
+And we can do this with a Special derivative called NGMODEL. usually written as [(ngModel)].
+This gives components in your application a way to share data. 
+Use two-way binding to listen for events and update values simultaneously between parent and child components.
+
+
+Also learnt about INTERPOLATION;
+Interpolation, refers to embedding expressions into marked up text.
+By default, Interpolation uses the double curly braces {{ and }} as delimeters
+(meaning you can have curly braces and var name in-between to have the value of that in your template).
+
+
+DIRECTIVES
+These are classes that adds additional behaviour to elements in your Angular applications.
+we use Angular built-in Directives to manage forms, lists, styles and what the users see.
+
+TYPES of DIRECTIVES;
+We have, 
+1. Component Directives --- Used with templates.
+
+2. Attribute Directives;
+    This changes the appearance or behaviour of an element, component or another directive.
+Kinds of Attribute Dir. are...
+NgClass --- adds/removes a set of css classes. 
+NgStyles --- adds/removes a set of HTML styles.
+NgModel --- adds two-way data binding to an HTML form element.
+    Inorder to use the NgClass/NgStyles you must add it to the components import list.
+    Inorder to use the ngModel you must import the FORMMODULES and add it to the app components import list.
+
+
+
+3. Structural Directives;
+    This changes the DOM LAYOUT by adding and removing DOM ELEMENTS.
+Kinds of Structural Dir. ...
+NgIF --- if/else condition
+NgFor --- loop over some targeted HTML or DOM.
+NgSwitch --- applies a switch condition.
+    NgSwitch is also sub branched into three(3);
+    NgSwitch, NgSwitchCase, NgSwitchDefault
+
+Here i noted that whenever you have to use the NgIF or any structure Dir you attach an asterisks infront *.
+for e.g *ngIf
+
+ 
