@@ -1,0 +1,11 @@
+Topics learnt for the day 09/11/2023;
+Angular Basics
+Angular Templates and NGModules
+Angular Binding
+
+Angular Basics; here i learnt that it is important to know about the angular cli.
+ It is the fastest, easiest and recommended way to develop an angular application.
+ The Angular cli makes a number of task easy, 
+ ng build - compiles an angular app into an output directory.
+ ng serve - builds and serves your application, rebuilds on file change
+ ng generate - generates or modifies files 
