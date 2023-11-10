@@ -1,0 +1,26 @@
+10/11/2023
+
+for today the process was more of a practical one, followed up some topics via youtube videos.
+
+topics touched; 
+PIPES
+NGMODULES
+ANGULAR COMMUNICATION (Looked at this quite briefly).
+
+Although there were no much theoretical learning today, i penned down some key points;
+
+
+Pipes are simple functions to use in template expressions to accept
+an input value and return a transformed value.
+Pipes are useful because you can use them throughout the application whilst only declaring each pipe once.. 
+Pipes can be used to transform strings, currency amounts, dates and other data for display.
+
+
+NGMODULES
+NgModules configure the injector, the compiler and help organize related things together.
+
+An NgModule is a class marked by the @NgModule decorator.
+ @NgModule takes a metadata object that describes how to compile a component's template
+and how to create an injector at runtime.
+@NgModule can also add service providers to the application dependency injectors.
+
